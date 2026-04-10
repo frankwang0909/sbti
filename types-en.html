@@ -18,6 +18,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>All SBTI Personality Types | Malou, The Dead, Joker, etc.</title>
 
+		<!-- Auto language detection: Chinese browser redirects to zh page -->
+		<script>
+			(function () {
+				var saved = localStorage.getItem('sbti-lang');
+				if (saved === 'zh') {
+					window.location.replace('./types.html');
+					return;
+				}
+				if (!saved) {
+					var lang = (
+						navigator.language ||
+						navigator.userLanguage ||
+						''
+					).toLowerCase();
+					if (lang.startsWith('zh')) {
+						window.location.replace('./types.html');
+					}
+				}
+			})();
+		</script>
+
 		<!-- SEO Meta Tags -->
 		<meta
 			name="description"
@@ -55,27 +76,18 @@
 			}
 		</style>
 	</head>
-	<body>
-		<div
-			class="lang-switcher"
-			style="position: absolute; top: 20px; right: 20px"
-		>
-			<a
-				href="types.html"
-				class="btn"
-				style="
-					width: auto;
-					padding: 5px 15px;
-					background: rgba(255, 255, 255, 0.1);
-					font-size: 0.8rem;
-					border: 1px solid rgba(255, 255, 255, 0.2);
-					text-decoration: none;
-					color: white;
-					border-radius: 8px;
-				"
-				>中文版</a
-			>
-		</div>
+		<body data-lang="en">
+			<div class="lang-switcher">
+				<button
+					class="btn lang-btn"
+					onclick="
+						localStorage.setItem('sbti-lang', 'zh');
+						window.location.href = './types.html';
+					"
+				>
+					中文版
+				</button>
+			</div>
 		<div class="container" style="max-width: 800px; text-align: left">
 			<h1 style="text-align: center; margin-bottom: 3rem">
 				<span class="title-sbti">SBTI</span>

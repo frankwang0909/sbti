@@ -18,6 +18,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>SBTI 所有人格类型一览表 | 吗喽、死者、尤物、小丑</title>
 
+		<!-- 自动语言检测：非中文浏览器跳转英文页 -->
+		<script>
+			(function () {
+				var saved = localStorage.getItem('sbti-lang');
+				if (saved === 'en') {
+					window.location.replace('./types-en.html');
+					return;
+				}
+				if (!saved) {
+					var lang = (
+						navigator.language ||
+						navigator.userLanguage ||
+						''
+					).toLowerCase();
+					if (!lang.startsWith('zh')) {
+						window.location.replace('./types-en.html');
+					}
+				}
+			})();
+		</script>
+
 		<!-- SEO Meta Tags -->
 		<meta
 			name="description"
@@ -54,28 +75,18 @@
 			}
 		</style>
 	</head>
-	<body>
-		<div
-			class="lang-switcher"
-			style="position: absolute; top: 20px; right: 20px"
-		>
-			<button
-				id="lang-btn"
-				class="btn"
-				style="
-					width: auto;
-					padding: 5px 15px;
-					background: rgba(255, 255, 255, 0.1);
-					font-size: 0.8rem;
-					border: 1px solid rgba(255, 255, 255, 0.2);
-					cursor: pointer;
-					color: white;
-					border-radius: 8px;
-				"
-			>
-				English / 中文
-			</button>
-		</div>
+		<body data-lang="zh">
+			<div class="lang-switcher">
+				<button
+					class="btn lang-btn"
+					onclick="
+						localStorage.setItem('sbti-lang', 'en');
+						window.location.href = './types-en.html';
+					"
+				>
+					English
+				</button>
+			</div>
 		<div class="container" style="max-width: 800px; text-align: left">
 			<h1 style="text-align: center; margin-bottom: 3rem">
 				<span class="title-sbti">SBTI</span>
@@ -136,26 +147,14 @@
 		<script type="module">
 			import { SBTI_TYPES } from './data.js';
 			const list = document.getElementById('types-list');
-			const langBtn = document.getElementById('lang-btn');
-			let currentLang = 'zh';
+			const currentLang = 'zh';
 
-			const UI_TEXT = {
-				zh: { title: '类型全集', back: '返回测试', match: '匹配 MBTI: ' },
-				en: { title: 'All Types', back: 'Back to Test', match: 'MBTI Match: ' },
-			};
+			Object.entries(SBTI_TYPES).forEach(([key, type]) => {
+				const card = document.createElement('div');
+				card.className = 'type-card';
+				card.style.borderLeftColor = type.color;
 
-			function renderTypes() {
-				list.innerHTML = '';
-				const text = UI_TEXT[currentLang];
-				document.getElementById('ui-types-title').textContent = text.title;
-				document.getElementById('ui-back-btn').textContent = text.back;
-
-				Object.entries(SBTI_TYPES).forEach(([key, type]) => {
-					const card = document.createElement('div');
-					card.className = 'type-card';
-					card.style.borderLeftColor = type.color;
-
-					card.innerHTML = `
+				card.innerHTML = `
                     <div class="type-header">
                         <div style="display: flex; align-items: center; gap: 15px;">
                             <span style="font-size: 2.5rem;">${type.icon}</span>
@@ -164,7 +163,7 @@
                         <div class="type-id">${type.id}</div>
                     </div>
                     <div style="font-size: 0.8rem; background: var(--mbti-blue); display: inline-block; padding: 2px 8px; border-radius: 10px; margin-bottom: 10px;">
-                        ${text.match}${type.mbti_match}
+                        匹配 MBTI: ${type.mbti_match}
                     </div>
                     <p style="margin-bottom: 10px; font-weight: bold;">${type.description[currentLang]}</p>
                     <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 15px; border-left: 3px solid ${type.color}; padding-left: 10px;">${type.persona[currentLang]}</p>
@@ -172,17 +171,8 @@
                         ${type.traits[currentLang].map((t) => `<span class="trait-tag" style="font-size: 0.7rem; padding: 3px 10px;">#${t}</span>`).join('')}
                     </div>
                 `;
-					list.appendChild(card);
-				});
-			}
-
-			langBtn.addEventListener('click', () => {
-				currentLang = currentLang === 'zh' ? 'en' : 'zh';
-				renderTypes();
+				list.appendChild(card);
 			});
-
-			// Initial render
-			renderTypes();
 		</script>
 	</body>
 </html>
