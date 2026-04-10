@@ -1,19 +1,6 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<!-- Google tag (gtag.js) -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=G-NWYNWSLHDD"
-		></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
-			gtag('config', 'G-NWYNWSLHDD');
-		</script>
 		<meta charset="UTF-8" />
 		<meta
 			name="viewport"
@@ -22,28 +9,6 @@
 		<title>
 			SBTI Soul Test | Are you a MALOU, THE DEAD, or a JOKER? MBTI is OUT
 		</title>
-
-		<!-- Auto language detection: Chinese browser redirects to zh page -->
-		<script>
-			(function () {
-				var saved = localStorage.getItem('sbti-lang');
-				if (saved === 'zh') {
-					window.location.replace('./index.html');
-					return;
-				}
-				if (!saved) {
-					var lang = (
-						navigator.language ||
-						navigator.userLanguage ||
-						''
-					).toLowerCase();
-					if (lang.startsWith('zh')) {
-						window.location.replace('./index.html');
-					}
-				}
-			})();
-		</script>
-
 		<!-- SEO Core -->
 		<meta
 			name="description"
@@ -149,7 +114,9 @@
 		<div class="container">
 			<!-- Welcome Screen -->
 			<div id="welcome-screen" class="screen active">
-				<div id="ui-tag" class="hero-tag">China's Latest Viral Meme · 2026 Soul Guide</div>
+				<div id="ui-tag" class="hero-tag">
+					China's Latest Viral Meme · 2026 Soul Guide
+				</div>
 				<h1 class="hero-title">
 					<span id="ui-title-top" class="hero-subtitle-top">MBTI is OUT</span>
 					<span class="title-sbti">SBTI</span>
@@ -253,5 +220,18 @@
 		</footer>
 
 		<script type="module" src="script.js"></script>
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-J19F9Y3NJH"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'G-J19F9Y3NJH');
+		</script>
 	</body>
 </html>

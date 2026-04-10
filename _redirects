@@ -1,0 +1,5 @@
+# Cloudflare Pages 服务端语言重定向
+# 中文用户 → index.html（默认），英文用户 → index-en.html
+
+/   /index-en.html  200  Language=en
+/   /index.html     200
