@@ -1,5 +1,8 @@
 # Cloudflare Pages headers
 
+/*
+  Content-Security-Policy: script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com
+
 /favicon.ico
   Content-Type: image/x-icon
   Cache-Control: public, max-age=86400
