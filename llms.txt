@@ -37,3 +37,14 @@ The test takes about 2 minutes (5 questions, 4 options each) and assigns a resul
 - /index-en.html — Main quiz (English)
 - /types.html — All 8 types with full descriptions (Chinese)
 - /types-en.html — All 8 types with full descriptions (English)
+
+## Common Search Terms & SEO
+
+- SBTI meaning (Silly Big Test of Identity)
+- MBTI 人格测试 (Personality Test)
+- Silly Big Personality Test
+- SBTI vs MBTI
+- 2026 朋友圈爆火测试 (Viral 2026 WeChat Quiz)
+- 精神状态确诊 (Soul/Mental State Diagnosis)
+- 吗喽/死者/小丑人格 (Malou/Dead/Joker types)
+- SBTI personality test free
