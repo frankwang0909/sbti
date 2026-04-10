@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWYNWSLHDD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NWYNWSLHDD');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All SBTI Personality Types | Malou, The Dead, Joker, etc.</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore all SBTI personality types. From Malou to The Dead, find out how your 'insane' state matches your MBTI profile.">
+    <meta name="keywords" content="SBTI types, Malou, The Dead personality, Joker personality, ATM personality, MBTI mapping">
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .type-card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: left;
+            border-left: 8px solid var(--sbti-orange);
+            margin-bottom: 20px;
+        }
+        .type-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .type-name {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .type-id {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="lang-switcher" style="position: absolute; top: 20px; right: 20px;">
+        <a href="types.html" class="btn" style="width: auto; padding: 5px 15px; background: rgba(255,255,255,0.1); font-size: 0.8rem; border: 1px solid rgba(255,255,255,0.2); text-decoration: none; color: white; border-radius: 8px;">中文版</a>
+    </div>
+    <div class="container" style="max-width: 800px; text-align: left;">
+        <h1 style="text-align: center; margin-bottom: 3rem;">
+            <span class="title-sbti">SBTI</span> <span id="ui-types-title">All Types</span>
+        </h1>
+        
+        <div class="types-disclaimer">
+            <span class="disclaimer-num">1627</span>
+            <span>theoretical variants exist across parallel universes. We have only unlocked 8 — because the researcher who was documenting type #9 has been officially diagnosed as "THE DEAD" and is unavailable for comment.</span>
+        </div>
+
+        <div id="types-list"></div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="index-en.html" id="ui-back-btn" class="btn btn-primary" style="display: inline-block; width: auto; padding: 12px 30px;">Back to Test</a>
+        </div>
+    </div>
+
+    <script type="module">
+        import { SBTI_TYPES } from './data.js';
+        const list = document.getElementById('types-list');
+        const currentLang = 'en';
+
+        Object.entries(SBTI_TYPES).forEach(([key, type]) => {
+            const card = document.createElement('div');
+            card.className = 'type-card';
+            card.style.borderLeftColor = type.color;
+            
+            card.innerHTML = `
+                <div class="type-header">
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <span style="font-size: 2.5rem;">${type.icon}</span>
+                        <div class="type-name" style="color: ${type.color}">${type.name[currentLang]}</div>
+                    </div>
+                    <div class="type-id">${type.id}</div>
+                </div>
+                <div style="font-size: 0.8rem; background: var(--mbti-blue); display: inline-block; padding: 2px 8px; border-radius: 10px; margin-bottom: 10px;">
+                    MBTI Match: ${type.mbti_match}
+                </div>
+                <p style="margin-bottom: 10px; font-weight: bold;">${type.description[currentLang]}</p>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 15px; border-left: 3px solid ${type.color}; padding-left: 10px;">${type.persona[currentLang]}</p>
+                <div style="display: flex; gap: 5px; flex-wrap: wrap;">
+                    ${type.traits[currentLang].map(t => `<span class="trait-tag" style="font-size: 0.7rem; padding: 3px 10px;">#${t}</span>`).join('')}
+                </div>
+            `;
+            list.appendChild(card);
+        });
+    </script>
+</body>
+</html>

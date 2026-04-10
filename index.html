@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWYNWSLHDD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NWYNWSLHDD');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>SBTI 灵魂确诊 | 你是吗喽、死者还是小丑？MBTI 已过时</title>
+
+    <!-- 自动语言检测：非中文浏览器跳转英文页 -->
+    <script>
+    (function() {
+        var saved = localStorage.getItem('sbti-lang');
+        if (saved === 'en') { window.location.replace('./index-en.html'); return; }
+        if (!saved) {
+            var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+            if (!lang.startsWith('zh')) { window.location.replace('./index-en.html'); }
+        }
+    })();
+    </script>
+
+    <!-- SEO Core -->
+    <meta name="description" content="5题确诊你的真实精神状态！SBTI 是2026朋友圈爆火的新人格测试：吗喽、死者、ATM、小丑、尤物… 你到底是哪种？比MBTI更懂当代打工人。">
+    <meta name="keywords" content="SBTI测试, 灵魂确诊, 吗喽测试, MBTI升级版, 精神状态测试, 发疯等级测试, 人格测试, 恶搞MBTI, 打工人人格, 2026人格测试">
+    <meta name="author" content="Frank">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#121212">
+
+    <!-- hreflang 多语言 SEO（部署后替换为完整 URL） -->
+    <link rel="alternate" hreflang="zh" href="https://sbti.debugcanada.com/">
+    <link rel="alternate" hreflang="en" href="https://sbti.debugcanada.com/index-en.html">
+    <link rel="alternate" hreflang="x-default" href="https://sbti.debugcanada.com/">
+
+    <!-- Open Graph (微信 / Facebook / 小红书分享) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="SBTI 灵魂确诊">
+    <meta property="og:title" content="SBTI 灵魂确诊 | 你是吗喽、死者还是小丑？">
+    <meta property="og:description" content="5题确诊你的真实精神状态！2026朋友圈最火人格测试，比MBTI更懂打工人。快来确诊你的发疯等级！">
+    <meta property="og:image" content="https://sbti.debugcanada.com/og-cover.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:locale:alternate" content="en_US">
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SBTI 灵魂确诊 | 你是吗喽还是小丑？">
+    <meta name="twitter:description" content="5题确诊你的真实精神状态！2026最火人格测试。">
+    <meta name="twitter:image" content="https://sbti.debugcanada.com/og-cover.png">
+
+    <!-- JSON-LD Structured Data for GEO / AI Search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "SBTI 灵魂确诊",
+      "alternateName": "SBTI Soul Test",
+      "url": "https://sbti.debugcanada.com/",
+      "description": "5题确诊你的真实精神状态！SBTI是2026朋友圈爆火的恶搞版MBTI测试，8种荒诞人格类型：吗喽、死者、ATM、哦不人、拿捏者、小丑、尤物、背景板。",
+      "applicationCategory": "EntertainmentApplication",
+      "inLanguage": ["zh-CN", "en"],
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0" },
+      "author": { "@type": "Person", "name": "Frank" },
+      "about": {
+        "@type": "Thing",
+        "name": "人格测试 / Personality Quiz",
+        "description": "SBTI是对MBTI的幽默恶搞，通过5个职场和社交场景的选择题，将用户分配到8种荒诞人格原型之一。"
+      }
+    }
+    </script>
+    <link rel="canonical" href="https://sbti.debugcanada.com/">
+    <meta property="og:url" content="https://sbti.debugcanada.com/">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-lang="zh">
+    <div class="lang-switcher">
+        <button class="btn lang-btn" onclick="localStorage.setItem('sbti-lang','en'); window.location.href='./index-en.html';">English</button>
+    </div>
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="screen active">
+            <div id="ui-tag" class="hero-tag">2026 精神状态指南</div>
+            <h1 class="hero-title">
+                <span id="ui-title-top" class="hero-subtitle-top">MBTI 已过时</span>
+                <span class="title-sbti">SBTI</span>
+                <span class="title-vs">VS</span>
+                <span class="title-mbti">MBTI</span>
+            </h1>
+            <p id="ui-subtitle" class="subtitle hero-cta-text">别再测那些正经的人格了，<br>测测你现在的"发疯"等级！</p>
+            <p id="ui-desc" class="hero-desc">传统的 16 型人格无法定义你的工位日常，<br>只有 SBTI 能确诊你的真实灵魂。</p>
+            <button id="start-btn" class="btn btn-primary btn-cta">立即开启：灵魂大确诊</button>
+            <div class="footer-links">
+                <a href="types.html" id="ui-view-types" class="link">查看 1627 种"发疯"人格全集</a>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div class="progress-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+            <h2 id="question-text" class="question-text">正在加载问题...</h2>
+            <div id="options-container"></div>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="screen">
+            <h2 id="ui-result-heading" class="result-heading">你的诊断结果是：</h2>
+            <div class="result-card">
+                <div id="result-icon" class="result-icon">🐒</div>
+                <div id="result-id" class="result-id">TYPE: MALO</div>
+                <div id="result-name" class="result-name">吗喽</div>
+                <div id="result-mbti" class="result-mbti">匹配 MBTI: ISFP</div>
+                <p id="result-desc" class="result-desc">加载中...</p>
+                <div id="result-persona" class="result-persona">深度画像加载中...</div>
+                <div id="traits-container" class="traits-container"></div>
+                <button id="share-btn" class="btn btn-share">🔗 分享我的结果</button>
+                <div class="social-share-row">
+                    <a id="twitter-share" class="social-btn twitter-btn" target="_blank" rel="noopener">𝕏 Twitter</a>
+                    <a id="facebook-share" class="social-btn facebook-btn" target="_blank" rel="noopener">f Facebook</a>
+                </div>
+                <button id="restart-btn" class="btn btn-restart">重新测试</button>
+            </div>
+            <div class="footer-links" style="margin-top: 2rem;">
+                <a href="types.html" id="ui-view-all" class="link">查看所有人格类型表</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

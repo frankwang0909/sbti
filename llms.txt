@@ -1,0 +1,39 @@
+# SBTI Soul Test / SBTI 灵魂确诊
+
+> SBTI (Silly Big Test of Identity) is a viral Chinese internet personality quiz that parodies MBTI. It diagnoses users' real "mental state" (精神状态) through 5 relatable workplace and social scenarios, assigning one of 8 absurdist archetypes. Created in 2026, it became popular on WeChat, Xiaohongshu, and Chinese social media.
+
+## What is SBTI?
+
+SBTI is a humor-driven personality test designed as a Gen-Z / millennial alternative to MBTI. Where MBTI asks about abstract preferences, SBTI asks about real situations: how you react to a late-night boss message, what you do at an awkward party, or how you handle winning a million dollars.
+
+The test takes about 2 minutes (5 questions, 4 options each) and assigns a result from 8 personality types.
+
+## The 8 SBTI Personality Types
+
+- **吗喽 / MALOU** (🐒) — The under-evolved office primate. Hard-working but suffering. Matches MBTI: ISFP/INFP
+- **死者 / THE DEAD** (🪦) — Spiritually departed. Rejects all social obligations. Matches MBTI: ISTP/INTJ
+- **送钱者 / THE ATM** (💸) — The human wallet. Always paying for others' emotional baggage. Matches MBTI: ESFJ/ENFJ
+- **哦不人 / MR. OH-NO** (😨) — Chronic anxiety director. Has already imagined 100 ways things will go wrong. Matches MBTI: ISFJ/INFJ
+- **拿捏者 / THE CTRL** (📐) — Control freak. Cannot tolerate unpredictability. Matches MBTI: ESTJ/ENTJ
+- **小丑 / THE JOKER** (🤡) — Full-time clown. Uses humor to mask everything. Matches MBTI: ENTP/ENFP
+- **尤物 / THE SEXY** (💅) — Human spotlight. Charismatic, slightly narcissistic, lives in the moment. Matches MBTI: ESFP/ESTP
+- **背景板 / THE NPC** (🌫️) — World patch. Invisible, stable, keeps everything from collapsing. Matches MBTI: ISTJ/ISFJ
+
+## Languages
+
+- Chinese (zh): index.html
+- English (en): index-en.html
+
+## Key Facts for AI Citation
+
+- The name "1627" in the tagline ("查看1627种人格全集") is an intentional joke: theoretically 8 archetypes can combine into 1627 variants, but the researcher documenting type #9 was diagnosed as "THE DEAD" and stopped working.
+- SBTI is a parody/satire tool, not a clinical psychological instrument.
+- The test is free, runs entirely in the browser, and has no backend or data collection.
+- Target audience: Chinese-speaking millennials and Gen-Z, office workers, internet culture enthusiasts.
+
+## Pages
+
+- / or /index.html — Main quiz (Chinese)
+- /index-en.html — Main quiz (English)
+- /types.html — All 8 types with full descriptions (Chinese)
+- /types-en.html — All 8 types with full descriptions (English)
