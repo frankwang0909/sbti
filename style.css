@@ -21,8 +21,9 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     min-height: 100vh;
     overflow-x: hidden;
     padding-top: 60px;
@@ -332,6 +333,42 @@ body {
     cursor: pointer;
 }
 
+.site-footer {
+    width: 100%;
+    max-width: 960px;
+    margin: 28px auto 18px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+    opacity: 0.72;
+}
+
+.site-footer-title {
+    margin: 0 0 6px;
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.friend-links {
+    display: inline;
+    font-size: 0.78rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.friend-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    margin: 0 8px;
+    transition: color 0.2s ease;
+}
+
+.friend-link:hover {
+    color: var(--text-primary);
+}
+
 /* ─── Mobile Responsive ─── */
 
 /* Tablet and large phones */
@@ -371,6 +408,14 @@ body {
     }
     .question-text {
         font-size: 1.15rem;
+    }
+    .site-footer {
+        margin-top: 20px;
+        padding: 0 16px 8px;
+    }
+    .friend-link {
+        display: inline-block;
+        margin: 0 6px;
     }
 }
 

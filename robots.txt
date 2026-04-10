@@ -32,4 +32,29 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
+# Major Chinese AI crawlers - explicitly allowed
+User-agent: Bytespider
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Baiduspider-render
+Allow: /
+
+User-agent: YisouSpider
+Allow: /
+
+User-agent: Sogou spider
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+User-agent: TencentBot
+Allow: /
+
+User-agent: DeepSeek
+Allow: /
+
 Sitemap: https://sbti.debugcanada.com/sitemap.xml

@@ -1,140 +1,257 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWYNWSLHDD"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-NWYNWSLHDD');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>SBTI Soul Test | Are you a MALOU, THE DEAD, or a JOKER? MBTI is OUT</title>
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-NWYNWSLHDD"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'G-NWYNWSLHDD');
+		</script>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+		/>
+		<title>
+			SBTI Soul Test | Are you a MALOU, THE DEAD, or a JOKER? MBTI is OUT
+		</title>
 
-    <!-- Auto language detection: Chinese browser redirects to zh page -->
-    <script>
-    (function() {
-        var saved = localStorage.getItem('sbti-lang');
-        if (saved === 'zh') { window.location.replace('./index.html'); return; }
-        if (!saved) {
-            var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-            if (lang.startsWith('zh')) { window.location.replace('./index.html'); }
-        }
-    })();
-    </script>
+		<!-- Auto language detection: Chinese browser redirects to zh page -->
+		<script>
+			(function () {
+				var saved = localStorage.getItem('sbti-lang');
+				if (saved === 'zh') {
+					window.location.replace('./index.html');
+					return;
+				}
+				if (!saved) {
+					var lang = (
+						navigator.language ||
+						navigator.userLanguage ||
+						''
+					).toLowerCase();
+					if (lang.startsWith('zh')) {
+						window.location.replace('./index.html');
+					}
+				}
+			})();
+		</script>
 
-    <!-- SEO Core -->
-    <meta name="description" content="5 questions to diagnose your true mental state! SBTI is the viral 2026 personality test: Malou, The Dead, ATM, Joker, Sexy… Which one are you? Better than MBTI for the modern office worker.">
-    <meta name="keywords" content="SBTI test, soul diagnosis, Malou test, MBTI alternative, mental state test, personality quiz, going insane level, funny personality test, 2026 personality">
-    <meta name="author" content="Frank">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#121212">
+		<!-- SEO Core -->
+		<meta
+			name="description"
+			content="5 questions to diagnose your true mental state! SBTI is the viral 2026 personality test: Malou, The Dead, ATM, Joker, Sexy… Which one are you? Better than MBTI for the modern office worker."
+		/>
+		<meta
+			name="keywords"
+			content="SBTI test, soul diagnosis, Malou test, MBTI alternative, mental state test, personality quiz, going insane level, funny personality test, 2026 personality"
+		/>
+		<meta name="author" content="Frank" />
+		<meta name="robots" content="index, follow" />
+		<meta name="theme-color" content="#121212" />
 
-    <!-- hreflang for multilingual SEO (replace with full URLs after deployment) -->
-    <link rel="alternate" hreflang="en" href="https://sbti.debugcanada.com/index-en.html">
-    <link rel="alternate" hreflang="zh" href="https://sbti.debugcanada.com/">
-    <link rel="alternate" hreflang="x-default" href="https://sbti.debugcanada.com/">
+		<!-- hreflang for multilingual SEO (replace with full URLs after deployment) -->
+		<link
+			rel="alternate"
+			hreflang="en"
+			href="https://sbti.debugcanada.com/index-en.html"
+		/>
+		<link rel="alternate" hreflang="zh" href="https://sbti.debugcanada.com/" />
+		<link
+			rel="alternate"
+			hreflang="x-default"
+			href="https://sbti.debugcanada.com/"
+		/>
 
-    <!-- Open Graph (Facebook / Twitter / LINE sharing) -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="SBTI Soul Test">
-    <meta property="og:title" content="SBTI Soul Test | Are you a MALOU, THE DEAD, or a JOKER?">
-    <meta property="og:description" content="5 questions to diagnose your true soul! The viral 2026 personality test that hits harder than MBTI. Come find out your Chaos Level!">
-    <meta property="og:image" content="https://sbti.debugcanada.com/og-cover.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:locale:alternate" content="zh_CN">
+		<!-- Open Graph (Facebook / Twitter / LINE sharing) -->
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="SBTI Soul Test" />
+		<meta
+			property="og:title"
+			content="SBTI Soul Test | Are you a MALOU, THE DEAD, or a JOKER?"
+		/>
+		<meta
+			property="og:description"
+			content="5 questions to diagnose your true soul! The viral 2026 personality test that hits harder than MBTI. Come find out your Chaos Level!"
+		/>
+		<meta
+			property="og:image"
+			content="https://sbti.debugcanada.com/og-cover.png"
+		/>
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:locale:alternate" content="zh_CN" />
 
-    <!-- Twitter / X Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="SBTI Soul Test | Are you a MALOU or a JOKER?">
-    <meta name="twitter:description" content="5 questions to diagnose your true mental state! The viral 2026 personality test.">
-    <meta name="twitter:image" content="https://sbti.debugcanada.com/og-cover.png">
+		<!-- Twitter / X Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta
+			name="twitter:title"
+			content="SBTI Soul Test | Are you a MALOU or a JOKER?"
+		/>
+		<meta
+			name="twitter:description"
+			content="5 questions to diagnose your true mental state! The viral 2026 personality test."
+		/>
+		<meta
+			name="twitter:image"
+			content="https://sbti.debugcanada.com/og-cover.png"
+		/>
 
-    <!-- JSON-LD Structured Data for GEO / AI Search -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "SBTI Soul Test",
-      "alternateName": "SBTI 灵魂确诊",
-      "url": "https://sbti.debugcanada.com/index-en.html",
-      "description": "5 questions to diagnose your true mental state! SBTI is the viral 2026 personality quiz — a humorous parody of MBTI. 8 absurdist archetypes: MALOU, THE DEAD, ATM, MR. OH-NO, THE CTRL, THE JOKER, THE SEXY, THE NPC.",
-      "applicationCategory": "EntertainmentApplication",
-      "inLanguage": ["en", "zh-CN"],
-      "isAccessibleForFree": true,
-      "offers": { "@type": "Offer", "price": "0" },
-      "author": { "@type": "Person", "name": "Frank" },
-      "about": {
-        "@type": "Thing",
-        "name": "Personality Quiz",
-        "description": "SBTI is a humor-driven parody of MBTI. Through 5 relatable workplace and social scenarios, it assigns users one of 8 absurdist personality archetypes popular in Chinese internet culture."
-      }
-    }
-    </script>
-    <link rel="canonical" href="https://sbti.debugcanada.com/index-en.html">
-    <meta property="og:url" content="https://sbti.debugcanada.com/index-en.html">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body data-lang="en">
-    <div class="lang-switcher">
-        <button class="btn lang-btn" onclick="localStorage.setItem('sbti-lang','zh'); window.location.href='./index.html';">中文版</button>
-    </div>
-    <div class="container">
-        <!-- Welcome Screen -->
-        <div id="welcome-screen" class="screen active">
-            <div id="ui-tag" class="hero-tag">2026 Mental Health Guide</div>
-            <h1 class="hero-title">
-                <span id="ui-title-top" class="hero-subtitle-top">MBTI is OUT</span>
-                <span class="title-sbti">SBTI</span>
-                <span class="title-vs">VS</span>
-                <span class="title-mbti">MBTI</span>
-            </h1>
-            <p id="ui-subtitle" class="subtitle hero-cta-text">Stop being so serious.<br>Check your current 'Going Insane' level!</p>
-            <p id="ui-desc" class="hero-desc">16 MBTI types can't define your daily office struggle.<br>Only SBTI can diagnose your true soul.</p>
-            <button id="start-btn" class="btn btn-primary btn-cta">Start Diagnosis Now</button>
-            <div class="footer-links">
-                <a href="types-en.html" id="ui-view-types" class="link">View All 1627 Chaotic Types</a>
-            </div>
-        </div>
+		<!-- JSON-LD Structured Data for GEO / AI Search -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebApplication",
+				"name": "SBTI Soul Test",
+				"alternateName": "SBTI 灵魂确诊",
+				"url": "https://sbti.debugcanada.com/index-en.html",
+				"description": "5 questions to diagnose your true mental state! SBTI is the viral 2026 personality quiz — a humorous parody of MBTI. 8 absurdist archetypes: MALOU, THE DEAD, ATM, MR. OH-NO, THE CTRL, THE JOKER, THE SEXY, THE NPC.",
+				"applicationCategory": "EntertainmentApplication",
+				"inLanguage": ["en", "zh-CN"],
+				"isAccessibleForFree": true,
+				"offers": { "@type": "Offer", "price": "0" },
+				"author": { "@type": "Person", "name": "Frank" },
+				"about": {
+					"@type": "Thing",
+					"name": "Personality Quiz",
+					"description": "SBTI is a humor-driven parody of MBTI. Through 5 relatable workplace and social scenarios, it assigns users one of 8 absurdist personality archetypes popular in Chinese internet culture."
+				}
+			}
+		</script>
+		<link rel="canonical" href="https://sbti.debugcanada.com/index-en.html" />
+		<meta
+			property="og:url"
+			content="https://sbti.debugcanada.com/index-en.html"
+		/>
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body data-lang="en">
+		<div class="lang-switcher">
+			<button
+				class="btn lang-btn"
+				onclick="
+					localStorage.setItem('sbti-lang', 'zh');
+					window.location.href = './index.html';
+				"
+			>
+				中文版
+			</button>
+		</div>
+		<div class="container">
+			<!-- Welcome Screen -->
+			<div id="welcome-screen" class="screen active">
+				<div id="ui-tag" class="hero-tag">2026 Mental Health Guide</div>
+				<h1 class="hero-title">
+					<span id="ui-title-top" class="hero-subtitle-top">MBTI is OUT</span>
+					<span class="title-sbti">SBTI</span>
+					<span class="title-vs">VS</span>
+					<span class="title-mbti">MBTI</span>
+				</h1>
+				<p id="ui-subtitle" class="subtitle hero-cta-text">
+					Stop being so serious.<br />Check your current 'Going Insane' level!
+				</p>
+				<p id="ui-desc" class="hero-desc">
+					16 MBTI types can't define your daily office struggle.<br />Only SBTI
+					can diagnose your true soul.
+				</p>
+				<button id="start-btn" class="btn btn-primary btn-cta">
+					Start Diagnosis Now
+				</button>
+				<div class="footer-links">
+					<a href="types-en.html" id="ui-view-types" class="link"
+						>View All 1627 Chaotic Types</a
+					>
+				</div>
+			</div>
 
-        <!-- Quiz Screen -->
-        <div id="quiz-screen" class="screen">
-            <div class="progress-container">
-                <div id="progress-bar" class="progress-bar"></div>
-            </div>
-            <h2 id="question-text" class="question-text">Loading questions...</h2>
-            <div id="options-container"></div>
-        </div>
+			<!-- Quiz Screen -->
+			<div id="quiz-screen" class="screen">
+				<div class="progress-container">
+					<div id="progress-bar" class="progress-bar"></div>
+				</div>
+				<h2 id="question-text" class="question-text">Loading questions...</h2>
+				<div id="options-container"></div>
+			</div>
 
-        <!-- Result Screen -->
-        <div id="result-screen" class="screen">
-            <h2 id="ui-result-heading" class="result-heading">Your Diagnosis:</h2>
-            <div class="result-card">
-                <div id="result-icon" class="result-icon">🐒</div>
-                <div id="result-id" class="result-id">TYPE: MALO</div>
-                <div id="result-name" class="result-name">MALOU</div>
-                <div id="result-mbti" class="result-mbti">MBTI Match: ISFP</div>
-                <p id="result-desc" class="result-desc">Loading...</p>
-                <div id="result-persona" class="result-persona">Loading profile...</div>
-                <div id="traits-container" class="traits-container"></div>
-                <button id="share-btn" class="btn btn-share">🔗 Share My Result</button>
-                <div class="social-share-row">
-                    <a id="twitter-share" class="social-btn twitter-btn" target="_blank" rel="noopener">𝕏 Twitter</a>
-                    <a id="facebook-share" class="social-btn facebook-btn" target="_blank" rel="noopener">f Facebook</a>
-                </div>
-                <button id="restart-btn" class="btn btn-restart">Retake Test</button>
-            </div>
-            <div class="footer-links" style="margin-top: 2rem;">
-                <a href="types-en.html" id="ui-view-all" class="link">View All Personality Types</a>
-            </div>
-        </div>
-    </div>
+			<!-- Result Screen -->
+			<div id="result-screen" class="screen">
+				<h2 id="ui-result-heading" class="result-heading">Your Diagnosis:</h2>
+				<div class="result-card">
+					<div id="result-icon" class="result-icon">🐒</div>
+					<div id="result-id" class="result-id">TYPE: MALO</div>
+					<div id="result-name" class="result-name">MALOU</div>
+					<div id="result-mbti" class="result-mbti">MBTI Match: ISFP</div>
+					<p id="result-desc" class="result-desc">Loading...</p>
+					<div id="result-persona" class="result-persona">
+						Loading profile...
+					</div>
+					<div id="traits-container" class="traits-container"></div>
+					<button id="share-btn" class="btn btn-share">
+						🔗 Share My Result
+					</button>
+					<div class="social-share-row">
+						<a
+							id="twitter-share"
+							class="social-btn twitter-btn"
+							target="_blank"
+							rel="noopener"
+							>𝕏 Twitter</a
+						>
+						<a
+							id="facebook-share"
+							class="social-btn facebook-btn"
+							target="_blank"
+							rel="noopener"
+							>f Facebook</a
+						>
+					</div>
+					<button id="restart-btn" class="btn btn-restart">Retake Test</button>
+				</div>
+				<div class="footer-links" style="margin-top: 2rem">
+					<a href="types-en.html" id="ui-view-all" class="link"
+						>View All Personality Types</a
+					>
+				</div>
+			</div>
+		</div>
 
-    <script type="module" src="script.js"></script>
-</body>
+		<footer class="site-footer">
+			<p class="site-footer-title">More from DebugCanada</p>
+			<div class="friend-links">
+				<a
+					class="friend-link"
+					href="https://debugcanada.com/?utm_source=sbti&utm_referal=footer"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					DebugCanada.com</a
+				>
+				<a
+					class="friend-link"
+					href="https://layoffscanada.com/?utm_source=sbti&utm_referal=footer"
+					target="_blank"
+					rel="noopener noreferrer"
+					>LayoffsCanada.com</a
+				>
+				<a
+					class="friend-link"
+					href="https://canadainterest.com/?utm_source=sbti&utm_referal=footer"
+					target="_blank"
+					rel="noopener noreferrer"
+					>CanadaInterest.com</a
+				>
+			</div>
+		</footer>
+
+		<script type="module" src="script.js"></script>
+	</body>
 </html>
