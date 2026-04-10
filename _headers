@@ -1,0 +1,17 @@
+# Cloudflare Pages headers
+
+/favicon.ico
+  Content-Type: image/x-icon
+  Cache-Control: public, max-age=86400
+
+/favicon-32.png
+  Content-Type: image/png
+  Cache-Control: public, max-age=86400
+
+/favicon-180.png
+  Content-Type: image/png
+  Cache-Control: public, max-age=86400
+
+/og-cover.png
+  Content-Type: image/png
+  Cache-Control: public, max-age=86400
